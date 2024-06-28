@@ -1,9 +1,10 @@
 import { createApp } from 'vue'
 import './main.scss'
 import App from './App.vue'
-import {createRouter} from "vue-router"
+import {createRouter, createWebHistory} from "vue-router"
+import Home from './views/Home.vue'
 
-const createRouter(: {
+const router = createRouter({
     history: createWebHistory(),
     routes: [
       {path: '/', name: 'Home', component: Home}

@@ -1,21 +1,16 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Home from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <h1>Hello App!</h1>
-  <p>
-    <strong>Current route path:</strong> {{ $route.fullPath }}
-  </p>
-  <nav>
-    <RouterLink to="/">Go to Home</RouterLink>
-    <RouterLink to="/about">Go to About</RouterLink>
-  </nav>
-  <main>
-    <RouterView />
-    <HelloWorld msg="Vite + Vue" />
-  </main>
+  <div id="nav">
+    <router-link to="/">
+      Home
+    </router-link>
+  </div>
+  <RouterView></RouterView
 </template>
+
 
 <style scoped>
 .logo {
